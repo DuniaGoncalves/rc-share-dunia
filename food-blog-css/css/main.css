@@ -1,0 +1,40 @@
+h1{
+  color: red;
+  font-size: 60px;
+  font-family: ;
+
+}
+
+nav {
+    font-size:20px;
+    color:grey;
+  }
+
+h2{
+  font-size: 40px;
+
+}
+h3{
+  font-size: 40px;
+  color:grey;
+}
+
+p{
+  width: 50%;
+}
+
+span{
+  color: lightgrey;
+  font-size: 100px;
+}
+
+a:link { color: none; }
+
+.ny{
+
+  height:150px;
+  width:50%;
+}
+.paris{
+  width:50%;
+}
