@@ -1,13 +1,12 @@
 body{
   font-family: 'Lato', sans-serif;
+  margin:10%;
 }
 
 h1 a{
   color: red;
   font-size: 60px;
   text-decoration: none;
-  font-family: ;
-
 }
 
 nav a{
@@ -25,41 +24,52 @@ h2 a{
 h3{
   font-size: 40px;
   color: lightgrey;
+  margin:70px 0px 0px 0px;
 }
 
 h4 a{
-  color: red;
   text-decoration: none;
+  color: red;
+  float: right;
+  margin:0 auto;
 }
 
-.place{
-  position: absolute; bottom:50px; right:50%;
+article{
+  padding-bottom: 30px;
+  border-bottom:solid lightgrey;
+  border-bottom-width: thin;
 }
 
-.place1{
-  position: absolute; bottom:-750px; right:50%;
-
-}
 p{
-  width: 50%;
+  font-size: 25px
 }
 
-p::first-letter{
+article p::first-letter{
+  margin: 0px 30px 0px 0px;
+  float:left;
   color: lightgrey;
   font-size: 100px;
 }
 
 .ny{
-  height: 150px;
-  width: 50%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9
 }
 
 .paris{
-  width: 50%;
+  width:100%;
 }
 
 .footernav a{
   color: red;
   text-decoration: none;
+}
 
+footer p{
+  font-size: 10px;
+}
+
+footer{
+  margin:30px 0px 0px 0px
 }
