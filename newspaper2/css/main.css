@@ -9,7 +9,11 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+   *{
+       -moz-box-sizing: border-box; /* Firexfox */
+       -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       box-sizing: border-box;
+   }
 html {
     color: #222;
     font-size: 1em;
@@ -123,18 +127,17 @@ ul li{
 
 }
 
-section{
-   clear: both;
-   /*border-bottom: 2px solid black;*/
- }
-
-/*why not?*/
  section h1{
    font-weight: bold;
    font-size: 30px;
  }
 
-section div{
+img{
+  width: 100%;
+  border: 2px solid black;
+
+}
+.column{
   display: inline-block;
   float: left;
   width: 30%;
@@ -143,16 +146,60 @@ section div{
 }
 
 .house{
-  border: 2px solid black;
   height: 400px;
-  width: 100%;
 }
 
 .electedofficials{
-  width: 100%;
   height: 450px;
-  border: 2px solid black;
+
 }
+
+
+.lastsec{
+  float: left;
+  width: 50%;
+
+}
+
+.barcode{
+  height: 90px;
+}
+
+.ad{
+  border-top: none;
+  height: 300px;
+  padding: 0;
+}
+
+.author {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+
+}
+.secline {
+   border-bottom: 2px solid black;
+ }
+
+.btwline{
+  border-right: 2px solid black;
+  margin: 1% 0 1% 0;
+  padding:1%;
+}
+
+.adjust{
+  margin: 1% 0 1% 0;
+  padding:1%;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
 
 
 
