@@ -94,6 +94,96 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   body {
+     text-transform: uppercase;
+     background: url(http://celebmafia.com/wp-content/uploads/2014/04/la-la-anthony-vasquez-jet-magazine-may-12-2014-issue_4.jpg);
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: 60%;
+
+     }
+
+   h1{
+       color: #A1E600 ;
+       font-size: 50px;
+       font-family: Montserrat;
+     }
+
+     .obama{
+       font-weight: bold;
+       font-size: 20px;
+       font-family:
+     }
+
+     .white{
+        color: white;
+        padding: 0;
+        margin: 0;
+     }
+
+     .grey{
+       color: grey;
+       padding: 0;
+       margin: 0;
+     }
+
+     .diamond {
+       height: 15px;
+       width: 15px;
+       background-color: #A1E600 ;
+       transform: rotate(45deg);
+     }
+
+     .container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+
+     }
+
+     #ribbon-container {
+       position: absolute;
+       left: -10px;
+       margin-top: -35px;
+       overflow: visible;
+       /* so we can see the pseudo-elements we're going to add to the anchor */
+       font-size: 16px;
+       font-weight: bold;
+       /* font-size and line-height must be equal so we can account for the height of the banner */
+       line-height: 18px;
+     }
+
+     #ribbon-container p {
+       display: block;
+       top: 0px;
+       padding: 10px;
+       position: relative;
+       /* allows us to position our pseudo-elements properly */
+       background: #000000 ;
+       overflow: visible;
+       height: 38px;
+       margin-left: 0px;
+       color: grey;
+
+     }
+
+     #ribbon-container p:before {
+       /* this creates the "forked" part of our ribbon */
+       content: "";
+       height: 0;
+       width: 0;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 250px;
+       border-top: 29px solid #000000 ;
+       border-bottom: 29px solid #000000 ;
+       border-right: 29px solid transparent;
+       border-left: 29px solid transparent;
+     }
+
+
 
 
 
