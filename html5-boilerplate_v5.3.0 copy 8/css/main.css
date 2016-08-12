@@ -94,10 +94,66 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   img {
-      -webkit-filter: invert(1);
-      filter: invert(1);
-      }
+header{
+  background-image: image('file:///C:/Users/Dunia/teen/img/img1.jpeg';
+}
+
+
+
+   *{
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+}
+
+.news{
+   float: left;
+   width: 330px;
+   margin-left: 30px;
+}
+
+.display {
+ display: block;
+ font-size: 12px;
+ color: #707070 ;
+ padding: 15px 0 0 18px;
+ margin-top: 5x;
+ line-height: 14px;
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+.date {
+   display: block;
+   float: left;
+   padding:0;
+   width: 50px;
+}
+.info{
+   float: right;
+   width: 265px;
+}
+
+div{
+ display: block;
+}
+
+li{
+ display: list-item;
+   text-align: -webkit-match-parent;
+}
+
+ul {
+ list-style-type: none;
+}
+footer {
+ clear: both;}
+
+ footer:section:ul {
+ display: inline-block;
+ float: right;
+
+}
 
 
 

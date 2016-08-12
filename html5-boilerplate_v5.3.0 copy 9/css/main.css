@@ -95,8 +95,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   li {
+     display: inline;
+     margin: 0 10px;
+   }
+
+   ul li p{
+     margin:9px 0px 12px 118px; 
+  }
+
+  span{
 
 
+  }
 
 
 
