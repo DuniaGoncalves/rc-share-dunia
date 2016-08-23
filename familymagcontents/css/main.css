@@ -99,6 +99,7 @@ body {
   background: url(http://4.bp.blogspot.com/-5uhLOcjQc-c/UMIYbBBnzyI/AAAAAAAAg2k/O591qMQDrAQ/s1600/Braylon+Green+1.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  font-family: 'Cormorant Garamond', serif;
 
 }
 
@@ -116,10 +117,12 @@ h1 {
   top: -70px;
   font-size: 80px;
   color:white;
+  font-family: 'Fredoka One', cursive;
 }
 
 h3 {
   margin-top: 15px;
+  font-family: 'Fredoka One', cursive;
 }
 
 h4{
@@ -147,7 +150,9 @@ h4{
 span {
   color: black;
   font-weight: bold;
-  font-size: 12px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 15px;
+  padding: 0 2px 0 0;
 }
 
 .create {
@@ -170,6 +175,7 @@ span {
 .create li {
   color: red;
   font-weight: bold;
+  font-family: 'Fredoka One', cursive;
   font-size: 12px;
   margin: 10px 0 10px -34px;
   list-style-type: none;
@@ -177,17 +183,19 @@ span {
 
 .create p {
   color: black;
-  font-weight: lighter;
+  font-weight: 100;
   font-size: 10px;
   padding-top: -2px;
   padding-bottom: 10px;
   margin-top: 1px;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .inlinepara {
   color: black;
   font-size: 10px;
   font-weight: lighter;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .nest {
@@ -209,6 +217,7 @@ span {
 
 .nest li {
   color: purple;
+  font-family: 'Fredoka One', cursive;
   font-weight: bold;
   font-size: 12px;
   margin: 10px 0 10px -34px;
@@ -217,6 +226,7 @@ span {
 
 .nest p {
   color: black;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: lighter;
   font-size: 10px;
   padding-top: -2px;
@@ -244,6 +254,7 @@ span {
 .smile li {
   color: green;
   font-weight: bold;
+  font-family: 'Fredoka One', cursive;
   font-size: 12px;
   margin: 10px 0 10px -34px;
   list-style-type: none;
@@ -252,6 +263,7 @@ span {
 .smile p {
   color: black;
   font-weight: lighter;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 10px;
   padding-top: -2px;
   padding-bottom: 10px;
@@ -259,7 +271,7 @@ span {
 }
 
 .explore li {
-  color: pink;
+  color: #ff00fb;
 }
 
 .moreinfo {
@@ -282,6 +294,10 @@ span {
   border-top: 2px dotted white;
 }
 
+.left{
+  margin-left: -9px;
+}
+
 .moreinfo ul {
   margin-top: -15px;
 }
@@ -290,7 +306,8 @@ span {
   color: white;
   font-weight: bold;
   font-size: 12px;
-  margin: 10px 0 10px -34px;
+  margin: 10px 0 -4px -34px;
+  padding: 0 0 -5px 0;
   list-style-type: none;
 }
 
@@ -302,14 +319,15 @@ span {
   padding-bottom: 10px;
   margin-top: 1px;
 }
-/*
+
 footer{
   clear: both;
   background: white;
   position:absolute;
-  bottom:-544px;
+  bottom:-670px;
   width:100%;
   height:80px;
+
 }
 
 footer ul{
@@ -317,19 +335,59 @@ footer ul{
   flex-direction: row;
 
 }
+
+}
 .flexright{
- justify-content: flex-end;
- }
+  justify-content: flex-end;
+}
 
 footer a{
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: black;
+  margin: 16px 11px;
 }
 
 footer li{
   display: flex;
   list-style-type: none;
-}*?
+
+}
+
+@media (min-width: 450px) and (max-width: 1000px) {
+
+  .create{
+    width: 50%;
+    height: 33%;
+  }
+
+  .nest{
+    position: absolute;
+    top: 456px;
+    left: 192px;
+    width: 50%;
+    height: 24%;
+  }
+
+  .smile{
+    position: absolute;
+    top: 671px;
+    left: 192px;
+    width: 50%;
+    height: 41%;
+  }
+
+.moreinfo{
+  position: absolute;
+  top: 165px;
+  left: 16px;
+  width: 15%;
+  height: 50%;
+
+}
+
+
+}
+
 
 
 
