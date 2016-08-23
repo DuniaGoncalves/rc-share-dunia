@@ -95,26 +95,35 @@ textarea {
    Author's custom styles
    ========================================================================== */
   body {
-       background: url(https://thumbs.dreamstime.com/z/delicious-italian-pizza-served-wooden-table-shot-above-63004675.jpg);
-       background-attachment:fixed;;
+       background: url(http://acrosstheboardcafe.com/wp-content/uploads/2015/06/photos-wood-table-background-with-use-this-background-in-your-picaboo-photo-book1.jpg);
+       background-attachment: cover;
        background-repeat: no-repeat;
        background-size: 1000px 1500px;
      }
 
 section{
-  width: 1000px;
+  width: 820px;
   height:500px;
 }
+
   h1 {
     transform:scale(2,1);
     font-size: 55pt;
-    text-align: center;;
+    text-align: center;
+    margin-left: 175px;
   }
 
   p{
     padding: 0 0 0 0;
     margin: -8px 0 -15px 0;
   }
+
+ img{
+    float:left;
+    height: 1200px;
+    width: 1000px;
+    margin: -29px 0 0 -327px;
+ }
 
 .good{
     color:orange;
@@ -151,6 +160,9 @@ section{
   text-align: right;
   padding-right: 67px;
   margin-bottom: 70px;
+  width: 116%;
+  padding-left: 615px;
+
 }
 
 .box2{
@@ -160,6 +172,8 @@ section{
   text-align: right;
   padding-right: 67px;
   margin-bottom: 70px;
+  width: 116%;
+  padding-left: 615px;
 
 }
 
@@ -170,6 +184,8 @@ section{
   text-align: right;
   padding-right: 67px;
   margin-bottom: 70px;
+  width: 116%;
+  padding-left: 615px;
 }
 
 .box4{
@@ -180,10 +196,133 @@ section{
   text-align: right;
   padding-right: 67px;
   margin-bottom: 70px;
+  width: 116%;
+  padding-left: 615px
+}
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
 
+.starburst,
+.starburst:before,
+.starburst:after,
+.starburst .text,
+.starburst .text:before,
+.starburst .text:after {
+	height: 13em;
+	width: 13em;
+	background-color: yellow;
+}
 
+.starburst:before,
+.starburst:after,
+.starburst .text:before,
+.starburst .text:after {
+	content: "";
+	position: absolute;
+}
 
+.starburst {
+	position: relative;
+	top: -38%;
+	left: 2.5em;
+	-webkit-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+	   -ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		   transform: rotate(-45deg);
+}
+
+.starburst:before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(-30deg);
+	  -moz-transform: rotate(-30deg);
+	   -ms-transform: rotate(-30deg);
+		-o-transform: rotate(-30deg);
+		   transform: rotate(-30deg);
+}
+
+.starburst:after {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(-15deg);
+	  -moz-transform: rotate(-15deg);
+	   -ms-transform: rotate(-15deg);
+		-o-transform: rotate(-15deg);
+		   transform: rotate(-15deg);
+}
+
+.starburst .text {
+	padding: 2em 0em;
+	height: 13em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	-webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	   -ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		   transform: rotate(45deg);
+	z-index: 1;
+}
+
+.starburst .text:before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(60deg);
+	  -moz-transform: rotate(60deg);
+	   -ms-transform: rotate(60deg);
+		-o-transform: rotate(60deg);
+		   transform: rotate(60deg);
+}
+
+.starburst .text:after {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(75deg);
+	  -moz-transform: rotate(75deg);
+	   -ms-transform: rotate(75deg);
+		-o-transform: rotate(75deg);
+		   transform: rotate(75deg);
+}
+
+.starburst .text span {
+	position: relative;
+	z-index: 100;
+	display: block;
+	text-align: center;
+	color: black;
+	font: 1em/1.4em Sans-Serif;
+}
+
+.starburst .text span.label {
+  font-weight: bold;
+	padding-top: -50px;
+	font-size: 25px;
+  color: black;
+  line-height: 45px;
+}
+
+.starburst .text span.number {
+  font-weight: bold;
+	font-size: 25px;
+	line-height: 55px;
+	color: black;
+
+}
+
+.starburst .text span.terms {
+	font-size: 1.2em;
+}
+
+.red{
+  text-transform: uppercase;
+  color:red;
+  font-weight: bold;
+  font-size: 35px;
+}
 
 
 
