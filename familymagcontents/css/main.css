@@ -111,25 +111,36 @@ body {
 h1 {
   display: inline-block;
   float: right;
-  font-size: 60px;
+  position: absolute;
+  right: 260px;
+  top: -70px;
+  font-size: 80px;
+  color:white;
 }
 
 h3 {
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 h4{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   color: white;
+  margin-bottom: 28px;
 }
+
 .issue li span{
   color:white;
 }
+
 .sub {
-  display: inline-block;
+  display: block;
   float: right;
-  font-size: 10px;
+  position: absolute;
+  right: 502px;
+  top: -45px;
+  color: white;
+  font-size: 20px;
   margin: 111px -239px;
 }
 
@@ -143,7 +154,7 @@ span {
   display: block;
   float: left;
   position: absolute;
-  top: 0;
+  top: 170px;
   left: 193px;
   background: white;
   opacity: 0.5;
@@ -151,15 +162,17 @@ span {
   font-size: 26px;
   line-height: 12px;
 }
+
 .create ul {
   margin-top: -15px;
 }
+
 .create li {
   color: red;
   font-weight: bold;
   font-size: 12px;
   margin: 10px 0 10px -34px;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 .create p {
@@ -181,7 +194,7 @@ span {
   display: block;
   float: left;
   position: absolute;
-  top: 0;
+  top: 170px;
   left: 369px;
   background: white;
   opacity: 0.5;
@@ -189,15 +202,17 @@ span {
   font-size: 26px;
   line-height: 12px;
 }
+
 .nest ul {
   margin-top: -15px;
 }
+
 .nest li {
   color: purple;
   font-weight: bold;
   font-size: 12px;
   margin: 10px 0 10px -34px;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 .nest p {
@@ -212,22 +227,28 @@ span {
 .smile{
   display: block;
   float: right;
+  position: absolute;
+  top: 170px;
+  right: 212px;
   background: white;
   opacity: 0.5;
   width: 10%;
   font-size: 26px;
   line-height: 12px;
 }
+
 .smile ul {
   margin-top: -15px;
 }
+
 .smile li {
   color: green;
   font-weight: bold;
   font-size: 12px;
   margin: 10px 0 10px -34px;
-  text-decoration: none;
+  list-style-type: none;
 }
+
 .smile p {
   color: black;
   font-weight: lighter;
@@ -245,18 +266,24 @@ span {
   display: block;
   float: left;
   position: absolute;
-  top: 400px;
+  top: 560px;
   left: 385px;
   width: 10%;
-  height: 20%;
+  height: 17%;
   font-size: 26px;
   line-height: 12px;
+}
 
+.italics{
+  font-style: italic;
+}
+
+.dotborder{
+  border-top: 2px dotted white;
 }
 
 .moreinfo ul {
   margin-top: -15px;
-
 }
 
 .moreinfo li {
@@ -264,8 +291,7 @@ span {
   font-weight: bold;
   font-size: 12px;
   margin: 10px 0 10px -34px;
-  text-decoration: none;
-
+  list-style-type: none;
 }
 
 .moreinfo p {
@@ -276,14 +302,14 @@ span {
   padding-bottom: 10px;
   margin-top: 1px;
 }
-
+/*
 footer{
   clear: both;
   background: white;
   position:absolute;
-  bottom:0;
+  bottom:-544px;
   width:100%;
-  height:60px;
+  height:80px;
 }
 
 footer ul{
@@ -297,13 +323,13 @@ footer ul{
 
 footer a{
 text-decoration: none;
-  color: black;
+color: black;
 }
 
 footer li{
   display: flex;
-  text-decoration: none;
-}
+  list-style-type: none;
+}*?
 
 
 

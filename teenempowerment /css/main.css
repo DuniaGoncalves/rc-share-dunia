@@ -244,6 +244,14 @@ i{
 
 }
 
+
+
+/*facebook*/.icon {
+  padding: 3px 0 0 7px;
+  height: 20px;
+  width: 18px;
+}
+
 .footerright{
   display: flex;
   flex-direction: row;
@@ -295,6 +303,9 @@ i{
     width: 100%;
   }
 
+header{
+  height: 14%;
+}
   header h1{
     margin: 180px -25px -25px 0px;
   }
