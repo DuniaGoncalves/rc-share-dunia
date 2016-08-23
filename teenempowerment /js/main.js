@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-  $( '.menu-btn' ).click(function(){
-    $('.responsive-menu').toggleClass('expand');
+  $( 'div.menu-btn' ).on("click", function(){
+    $('.mobile-nav nav').toggleClass('expand');
   });
+
 });
