@@ -35,7 +35,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
@@ -87,7 +87,113 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* SLIDER STRUCTURE */
 
+#slider {
+    background: #000;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    height: 320px;
+    width: 680px;
+    margin: 40px auto 0;
+    overflow: visible;
+    position: relative;
+}
+/* HIDE ALL OUTSIDE OF THE SLIDER */
+
+#mask {
+    overflow: hidden;
+    height: 320px;
+}
+/* IMAGE LIST */
+
+#slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slider li  {
+    width: 680px;  /* Width Image */
+    height: 320px; /* Height Image */
+    position: absolute;
+    right: -325px; /* Original Position - Outside of the Slider */
+    list-style: none;
+}
+
+#slider li.firstanimation {
+    animation: cycle 25s linear infinite;
+}
+
+#slider li.secondanimation {
+    animation: cycletwo 25s linear infinite;
+}
+
+#slider li.thirdanimation {
+    animation: cyclethree 25s linear infinite;
+}
+
+#slider li.fourthanimation {
+    animation: cyclefour 25s linear infinite;
+}
+
+#slider li.fifthanimation {
+    animation: cyclefive 25s linear infinite;
+}
+
+/* ANIMATION */
+
+@keyframes cycle {
+    0%  { right: 0px; } /* When you start the slide, the first image is already visible */
+    4%  { right: 0px; } /* Original Position */
+    16% { right: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+    20% { right: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+    21% { right: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
+    92% { right: -325px; opacity: 0; z-index: 0; }
+    96% { right: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+    100%{ right: 0px; opacity: 1; }
+}
+
+@keyframes cycletwo {
+    0%  { right: -325px; opacity: 0; } /* Original Position */
+    16% { right: -325px; opacity: 0; }/* Starts moving after 16% to this position */
+    20% { right: 0px; opacity: 1; }
+    24% { right: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+    36% { right: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+    40% { right: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+    41% { right: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+    100%{ right: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclethree {
+    0%  { right: -325px; opacity: 0; }
+    36% { right: -325px; opacity: 0; }
+    40% { right: 0px; opacity: 1; }
+    44% { right: 0px; opacity: 1; }
+    56% { right: 0px; opacity: 1; }
+    60% { right: 325px; opacity: 0; z-index: 0; }
+    61% { right: -325px; opacity: 0; z-index: -1; }
+    100%{ right: -325px; opacity: 0; z-index: -1; }
+}
+
+@keyframes cyclefour {
+    0%  { right: -325px; opacity: 0; }
+    56% { right: -325px; opacity: 0; }
+    60% { right: 0px; opacity: 1; }
+    64% { right: 0px; opacity: 1; }
+    76% { right: 0px; opacity: 1; z-index: 0; }
+    80% { right: 325px; opacity: 0; z-index: 0; }
+    81% { right: -325px; opacity: 0; z-index: -1; }
+    100%{ right: -325px; opacity: 0; z-index: -1; }
+}
+@keyframes cyclefive {
+    0%  { right: -325px; opacity: 0; }
+    76% { right: -325px; opacity: 0; }
+    80% { right: 0px; opacity: 1; }
+    84% { right: 0px; opacity: 1; }
+    96% { right: 0px; opacity: 1; z-index: 0; }
+    100%{ right: 325px; opacity: 0; z-index: 0; }
+}
 
 
 
@@ -162,10 +268,10 @@ textarea {
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
  *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
+ *    Otherwise it causes space to appear at the right and bottom of elements
  *    that receive the `clearfix` class.
  * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
+ *    `:before` to contain the right-margins of child elements.
  */
 
 .clearfix:before,
