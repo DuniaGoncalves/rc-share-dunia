@@ -23,29 +23,32 @@
 
         <!-- header starts here -->
         <header>
-            <nav>
-                <a href="www.airbnb.com"><img class="logo" src="images/logo.jpg" alt="airbnblogo"></a>
-                <form id="searchbox" action="">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input id="search" type="text" placeholder="Where to?">
-                </form>
-                <ul>
-                    <li class="border"><a href="https://www.airbnb.com/host?from_nav=1&link=1">Become a Host</a></li>
-                    <li><a href="https://www.airbnb.com/help">Help</a></li>
-                    <li> <a href="#">Sign Up</a></li>
-                    <li><a href="#">Log In</a></li>
-                </ul>
-            </nav>
+                <nav class="mainnav">
+                    <a href="www.airbnb.com"><img class="logo" src="images/logo.jpg" alt="airbnblogo"></a>
+                    <form id="searchbar" action="">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input id="search" type="text" placeholder="Where to?">
+                    </form>
+                    <ul>
+                        <li><a class="border" href="https://www.airbnb.com/host?from_nav=1&link=1">Become a Host</a></li>
+                        <li><a href="https://www.airbnb.com/help">Help</a></li>
+                        <li> <a href="#">Sign Up</a></li>
+                        <li><a href="#">Log In</a></li>
+                    </ul>
+                </nav>
         </header>
-        <section class="main">
+        <section class="main clearfix">
             <!-- hero starts here -->
             <section class="hero">
-                <div>
+                <div class="heroimage">
+                <img src="https://c1.staticflickr.com/2/1490/26157609400_94d5ddb7d7_b.jpg" alt="paris in the spring time">
+               </div>
+                <div class="livethere">
                     <h1>LIVE THERE</h1>
                     <p>Book homes from local hosts in 191+ countries and experience a place like you live there.</p>
-                    <a class="blockit" href="#">Learn About Airbnb</a>
+                    <a href="#"><h3 class="learnbtn">Learn About Airbnb</h3></a>
                 </div>
-                <div>
+                <div class="searchtrip">
                     <form id="searchbox" action=""><!-- look up jquery -->
                         <input id="search" type="text" placeholder="Where to?">
                         <input class="datepicker" type="date" placeholder="Check In">
@@ -55,31 +58,8 @@
                 </div>
             </section>
             <!-- meat of page starts here -->
-            <section class="host">
-                <div class="container">
-                    <div id="content-slider">
-                        <div id="slider">  <!-- Slider container Work in progress-->
-                            <div id="mask">  <!-- Mask -->
-                                <ul>
-                                    <li id="first" class="firstanimation">
-                                      <a href="#"><img src="" alt="" /></a>  <!-- ID for tooltip and class for animation -->
-                                    </li>
-
-                                    <li id="second" class="secondanimation">
-                                        <a href="#"> <img src="" alt=""> </a>
-                                    </li>
-
-                                    <li id="third" class="thirdanimation">
-                                        <a href="#"> <img src="" alt=""/> </a>
-                                    </li>
-
-                                </ul>
-
-                            </div>  <!-- End Mask -->
-                        </div>  <!-- End Slider Container -->
-                    </div>
-                </div>
-                <div>
+            <section>
+                <div class="host">
                     <h2>Hosting opens up a world of opportunity</h2>
                     <h3> Earn money sharing your extra space with travelers.</h3>
                     <a href="#"><h3 class="earnbtn">See What You Can Earn</h3></a>
@@ -88,65 +68,69 @@
             <section>
                 <h2>Just for the weekend</h2>
                 <h3> Discover new, inspiring places close to home.</h3>
-                <div class="image">
-                    <p>Portland</p>
-                    <img src="images/portland.jpeg" alt="">
-                </div>
-                <div class="image">
-                    <p>New York</p>
-                    <img src="images/newyork.jpeg" alt="">
-                </div>
-                <div class="image">
-                    <p>Montreal</p>
-                    <img src="images/monteal.jpeg" alt="">
-                </div>
+                <section class="trips">
+                    <div class="image">
+                        <p>Portland</p>
+                        <img src="images/portland.jpeg" alt="">
+                    </div>
+                    <div class="image">
+                        <p>New York</p>
+                        <img src="images/newyork.jpeg" alt="">
+                    </div>
+                    <div class="image">
+                        <p>Montreal</p>
+                        <img src="images/monteal.jpeg" alt="">
+                    </div>
+                </section>
                 <a href="#"><h3>See All Destinations</h3></a>
             </section>
             <section>
                 <h2>Explore the World</h2>
                 <h3> See where people are traveling, all around the world.</h3>
-                <div>
-                    <p>San Franciso</p>
-                    <img src="images/sanfran.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Hosted by Tina</p>
-                    <p>Ahangama</p>
-                    <img src="images/ahangama.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Paris</p>
-                    <img src="images/paris.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Miami</p>
-                    <img src="images/miami.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Sightsee in Washington</p>
-                    <img src="images/wash.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Hosted by Danai</p>
-                    <p>Chiang Mai</p>
-                    <img src="images/chiang.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Los Angeles</p>
-                    <img src="images/la.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Chicago</p>
-                    <img src="images/chicago.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Austin</p>
-                    <img src="images/austin.jpeg" alt="">
-                </div>
-                <div>
-                    <p>Return to nature in Burlington</p>
-                    <img src="images/bur.jpeg" alt="">
-                </div>
+                <section class="trips">
+                    <div>
+                        <p>San Franciso</p>
+                        <img src="images/sanfran.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Hosted by Tina</p>
+                        <p>Ahangama</p>
+                        <img src="images/ahangama.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Paris</p>
+                        <img src="images/paris.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Miami</p>
+                        <img src="images/miami.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Sightsee in Washington</p>
+                        <img src="images/wash.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Hosted by Danai</p>
+                        <p>Chiang Mai</p>
+                        <img src="images/chiang.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Los Angeles</p>
+                        <img src="images/la.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Chicago</p>
+                        <img src="images/chicago.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Austin</p>
+                        <img src="images/austin.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Return to nature in Burlington</p>
+                        <img src="images/bur.jpeg" alt="">
+                    </div>
+                </section>
             </section>
             <section>
                 <div>
