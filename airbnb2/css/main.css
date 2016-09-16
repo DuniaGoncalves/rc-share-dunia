@@ -90,6 +90,12 @@ textarea {
 body{
     background: #EDEFED;
 }
+
+h2{
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
 /* =============================
    Nav
    =============================*/
@@ -187,7 +193,7 @@ div img {
     background: white;
     text-align: center;
     color: #C4C4C4;
-    margin: 0px 195px;
+    margin: 0 195px;
 }
 
 .searchtrip{
@@ -199,30 +205,43 @@ div img {
   Host Section
    =============================*/
 .host{
-    width: 21%;
-    height: 377px;
+    width: 327px;
+    height: 344px;
     background: white;
     position: relative;
     left: 900px;
-    padding: 20px 50px;
-
 }
 
 .earnbtn{
     background: blue;
     color: white;
     text-align: center;
-    margin: 0px 33px;
+    margin: 0 33px;
 }
 /* =============================
  Just Weekend Section
    =============================*/
 .trips {
     display: flex;
+    justify-content: space-around;
+    padding: 0 250px;
+    flex-wrap: wrap;
+}
+.wideimg{
+    width:654px;
 }
 
+.trips h2{
+    position: relative;
+    text-align: center;
+    top: 200px;
+    margin: 0 auto;
+}
 
-
+.textwrap{
+    word-wrap: break-word;
+    width: 266px;
+}
 
 
 
